@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta content="initail-scale=1, width=device-width" name="viewport"/>
+		<title>My APP</title>
+		<link rel="stylesheet" href="index.css">
+	</head>
+	<body>
+		<div class="header">
+			My First page
+			<button class="navigate Register">Register</button>
+			<button class="navigate signIn" onclick="click()" >Sign IN</button>
+		</div>
+		<!-- {% block body %}{% endblock %} -->
+		<a href="layout.html" class="link">Register</a>
+
+	<script type="text/javascript">
+		function click(){
+			window.location.href = "dashboard";
+		}
+
+	</script>
+	</body>
+</html>

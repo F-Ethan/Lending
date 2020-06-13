@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta content="initail-scale=1, width=device-width" name="viewport"/>
+		<title>My APP</title>
+		<link rel="stylesheet" href="index.css">
+	</head>
+	<body>
+		<div class="header">
+			<span class="head"><strong class="pink">Rose</strong> Lending</span>
+			<ul  class="drop">
+				<li>
+				  Dropdown Link
+				  <ul>
+				    <li><a href="#">Link 1</a></li>
+				    <li><a href="#">Link 2</a></li>
+				    <li><a href="#">Link 3</a></li>
+				  </ul>
+				</li>
+			</ul>
+		</div>
+		<!-- {% block body %}{% endblock %} -->
+		<div id="singin" class="login hidden">
+			<form>
+				<input type="email" name="username" placeholder="username" class="form" required autofocus><br>
+				<input type="password" name="password" placeholder="Password" class="form" required><br>
+				<input type="radio" name="remember" placeholder="Remember me" >Remember me<br><br>
+				<input type="submit" name="submit" >
+			</form>
+		</div>
+
+		<div class="content">
+			<div class="con">
+				<div class="search_con">
+					<form>
+						<input type="search" name="search" placeholder="search" class="search">
+					</form>
+					<span class="total">Results:</span>
+				</div>
+			</div>
+			<ul type="none">
+				<li class="list">
+					<a href="login.html">
+						<div class="acount">
+							<div class="name">Title</div>
+							<span class="left info">Action</span>
+							<span class="middle info">User Id</span>
+							<span class="right info">Amount</span>
+						</div>
+					</a>
+				</li>
+
+				<li>Rose</li>
+				<li>Ivan</li>
+				<li>Gidion</li>
+			</ul>
+		</div>
+
+<script type="text/javascript">
+$(".list").click(function() { window.location = $(this).find("a").attr("href"); return false; });
+
+</script>
+
+	</body>
+</html>
